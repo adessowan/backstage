@@ -1,0 +1,59 @@
+apiVersion: backstage.io/v1alpha1
+kind: Component
+metadata:
+  name: backstage
+  description: Backstage Developer Portal für APIs
+  annotations:
+    github.com/project-slug: adessowan/backstage
+spec:
+  type: service
+  lifecycle: production
+  owner: default-team
+
+---
+apiVersion: backstage.io/v1alpha1
+kind: API
+metadata:
+  name: autobahn-api
+  description: API für Autobahn-Daten
+  annotations:
+    github.com/project-slug: adessowan/backstage
+    backstage.io/api-linter: spectral
+spec:
+  type: openapi
+  lifecycle: production
+  owner: default-team
+  definition:
+    $text: https://raw.githubusercontent.com/adessowan/backstage/main/autobahn.yaml
+
+---
+apiVersion: backstage.io/v1alpha1
+kind: API
+metadata:
+  name: dwd-api
+  description: API für Wetterdaten (DWD)
+  annotations:
+    github.com/project-slug: adessowan/backstage
+    backstage.io/api-linter: spectral
+spec:
+  type: openapi
+  lifecycle: production
+  owner: default-team
+  definition:
+    $text: https://raw.githubusercontent.com/adessowan/backstage/main/dwd.yaml
+
+---
+apiVersion: backstage.io/v1alpha1
+kind: API
+metadata:
+  name: ladesaeulen-api
+  description: API für Ladesäulen-Daten
+  annotations:
+    github.com/project-slug: adessowan/backstage
+    backstage.io/api-linter: spectral
+spec:
+  type: openapi
+  lifecycle: production
+  owner: default-team
+  definition:
+    $text: https://raw.githubusercontent.com/adessowan/backstage/main/ladesaeulen.yaml
