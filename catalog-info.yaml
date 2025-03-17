@@ -24,7 +24,7 @@ spec:
   lifecycle: production
   owner: default-team
   definition:
-    $text: https://raw.githubusercontent.com/adessowan/backstage/main/autobahn.yaml
+    $text: https://raw.githubusercontent.com/adessowan/backstage/refs/heads/main/autobahn.yaml?token=GHSAT0AAAAAAC7KVX5DWZPYXTTJ7O37OGFOZ6YB6FA
 
 ---
 apiVersion: backstage.io/v1alpha1
@@ -40,7 +40,7 @@ spec:
   lifecycle: production
   owner: default-team
   definition:
-    $text: https://raw.githubusercontent.com/adessowan/backstage/main/dwd.yaml
+    $text: https://raw.githubusercontent.com/adessowan/backstage/refs/heads/main/dwd.yaml?token=GHSAT0AAAAAAC7KVX5DZJ4XYI2SFZSLGBUKZ6YB7CA
 
 ---
 apiVersion: backstage.io/v1alpha1
@@ -56,4 +56,4 @@ spec:
   lifecycle: production
   owner: default-team
   definition:
-    $text: https://raw.githubusercontent.com/adessowan/backstage/main/ladesaeulen.yaml
+    $text: https://raw.githubusercontent.com/adessowan/backstage/refs/heads/main/ladesaeulen.yaml?token=GHSAT0AAAAAAC7KVX5D3W7M4363YQORMK2KZ6YB7UQ
